@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBAction func btnClicked(_ sender: Any) {
         
         button.isHidden = true
-        label.isHidden = false
+        //label.isHidden = false
     }
     
 }
