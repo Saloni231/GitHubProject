@@ -21,7 +21,9 @@ class ViewController: UIViewController {
 
     @IBAction func btnClicked(_ sender: Any) {
         
-        button.isHidden = true
+        let display = self.storyboard?.instantiateViewController(withIdentifier: "DisplayViewController") as! DisplayViewController
+        self.navigationController?.pushViewController(display, animated: true)
+        //button.isHidden = true
         //label.isHidden = false
     }
     
