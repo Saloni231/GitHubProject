@@ -20,7 +20,7 @@
                                 <rect key="frame" x="132" y="450" width="150" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="G8E-gr-lWN"/>
-                                    <constraint firstAttribute="width" constant="150" id="TIK-yK-cZh"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="TIK-yK-cZh"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Click">
@@ -30,22 +30,10 @@
                                     <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fHN-St-eNg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPv-AX-i8L">
-                                <rect key="frame" x="132" y="345" width="150" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="3j1-a5-Mn9"/>
-                                    <constraint firstAttribute="width" constant="150" id="tTI-F3-olr"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hhX-PM-mjA" firstAttribute="top" secondItem="oPv-AX-i8L" secondAttribute="bottom" constant="65" id="8si-3V-cdC"/>
-                            <constraint firstItem="oPv-AX-i8L" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FxQ-Mi-OzX"/>
                             <constraint firstItem="hhX-PM-mjA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gXk-be-9tv"/>
                             <constraint firstItem="hhX-PM-mjA" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="rrG-ff-VE8"/>
                         </constraints>
@@ -67,8 +55,24 @@
                     <view key="view" contentMode="scaleToFill" id="nx6-Qx-LC9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPv-AX-i8L">
+                                <rect key="frame" x="132" y="428" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3j1-a5-Mn9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="tTI-F3-olr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="btu-0K-IfX"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="oPv-AX-i8L" firstAttribute="centerY" secondItem="nx6-Qx-LC9" secondAttribute="centerY" id="BkS-AZ-Y3U"/>
+                            <constraint firstItem="oPv-AX-i8L" firstAttribute="centerX" secondItem="nx6-Qx-LC9" secondAttribute="centerX" id="KEK-Lg-Dgc"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OII-aN-J2O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
